@@ -1,3 +1,5 @@
 # Advent of Code
 
-<iframe src="https://giphy.com/embed/UTFiHeDL8cOSA" width="480" height="350" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/thegoodfilms-vintage-cartoon-smiling-UTFiHeDL8cOSA">via GIPHY</a></p>
+My solutions to [Advent of Code](https://adventofcode.com/).<br>
+![GIF of the Grinch (animated version) grinning.](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2kwNnc2dGhyNHdsbTlyMzhkdDNhc3JlMzdidTE4YXM0MnUyYzM2eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/UTFiHeDL8cOSA/giphy.gif)<br>
+[via GIPHY](https://giphy.com/gifs/thegoodfilms-vintage-cartoon-smiling-UTFiHeDL8cOSA)
