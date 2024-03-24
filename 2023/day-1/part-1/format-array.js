@@ -2,7 +2,6 @@ const fs = require('fs')
 
 const reader = fs.readFileSync('input.txt', 'utf8')
 const lines = reader.split('\n')
-
 const input = []
 
 lines.forEach((line) => {
@@ -16,6 +15,4 @@ const output =
 
 fs.writeFileSync('input.js', output)
 
-console.log(
-  'Contents of the input.txt file have been added to the input.js file.'
-)
+console.log('input.txt -> input.js')
