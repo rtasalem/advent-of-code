@@ -9,7 +9,7 @@ for (const game of games) {
     const gameData = set.split('; ')
     for (const data of gameData) {
       const cubeRecords = data.split(', ')
-      for (cubeData of cubeRecords) {
+      for (const cubeData of cubeRecords) {
         const [cubeCount, cubeColour] = cubeData.split(' ')
         const cubeLimits = {
           red: 12,

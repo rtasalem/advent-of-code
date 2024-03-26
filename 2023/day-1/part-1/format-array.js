@@ -13,6 +13,5 @@ const output =
   JSON.stringify(input, null, 2) +
   '\n\nmodule.exports = input'
 
-fs.writeFileSync('input.js', output)
-
+const formatArray = fs.writeFileSync('input.js', output)
 console.log('input.txt -> input.js')

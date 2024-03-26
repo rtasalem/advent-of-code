@@ -1,7 +1,8 @@
-// 2023 DAY 1 PART 2 - STILL TO COMPLETE :(
-const input = require('../part-1/input')
+const fs = require('fs')
 
-const integerMap = {
+const input = require('../input.txt', 'utf8').toString().split('\n')
+const intArray = []
+const intMap = {
   zero: 0,
   one: 1,
   two: 2,

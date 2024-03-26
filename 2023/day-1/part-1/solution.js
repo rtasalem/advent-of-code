@@ -7,4 +7,4 @@ for (const line of input) {
   total += parseInt(`${numbers[0]}${numbers[numbers.length - 1]}`)
 }
 
-console.log(total)
+console.log(`Total sum of all calibration values = ${total}`)
