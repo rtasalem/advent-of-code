@@ -1,0 +1,7 @@
+{
+  "name": "advent-of-code",
+  "version": "1.0.0",
+  "description": "My solutions to Advent of Code (https://adventofcode.com/)",
+  "main": "index.js",
+  "author": "rtasalem (github.com/rtasalem)"
+}
