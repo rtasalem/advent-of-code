@@ -1,7 +1,22 @@
 {
   "name": "advent-of-code",
   "version": "1.0.0",
-  "description": "My solutions to Advent of Code (https://adventofcode.com/)",
-  "main": "index.js",
-  "author": "rtasalem (github.com/rtasalem)"
+  "description": "Advent of Code solutions.",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rtasalem/advent-of-code.git"
+  },
+  "keywords": [
+    "advent-of-code"
+  ],
+  "author": "Rana Salem (github.com/rtasalem)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rtasalem/advent-of-code/issues"
+  },
+  "homepage": "https://github.com/rtasalem/advent-of-code#readme"
 }
