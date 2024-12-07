@@ -1,6 +1,7 @@
 import fs from 'fs'
+import { input, utf8 } from '../../constants/index.js'
 
-const reader = fs.readFileSync('./input.txt', 'utf8')
+const reader = fs.readFileSync(input, utf8)
 const brackets = reader.split('')
 console.log("🚀 ~ brackets:", brackets)
 

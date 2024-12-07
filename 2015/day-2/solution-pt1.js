@@ -1,6 +1,7 @@
 import fs from 'fs'
+import { input, utf8 } from '../../constants/index.js'
 
-const input = fs.readFileSync('./input.txt', 'utf8')
-const lines = input.split('\n')
+const data = fs.readFileSync(input, utf8)
+const lines = data.split('\n')
 console.log("🚀 ~ lines:", lines)
 
