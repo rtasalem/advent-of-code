@@ -1,6 +1,7 @@
 import fs from 'fs'
+import { input, utf8 } from '../../constants/index.js'
 
-const data = fs.readFileSync('./input.txt', 'utf8')
+const data = fs.readFileSync(input, utf8)
 const lines = data.trim().split('\n')
 
 const leftLocationIds = []
@@ -22,5 +23,4 @@ for(let i = 0; i < leftLocationIds.length; i++) {
 }
 
 const sum = difference.reduce((acc, cur) => acc + cur, 0)
-
-console.log('The solution to Day 1 Part 1 of AoC 2024 =', sum)
+console.log('Solution to AoC 2024 Day 1, Part 1 =', sum)
