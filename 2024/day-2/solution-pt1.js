@@ -1,13 +1,43 @@
 import fs from 'fs'
 import { input, utf8 } from '../../constants/index.js'
+import { isAlwaysIncreasing, isAlwaysDecreasing } from './utils/index.js'
 
 const data = fs.readFileSync(input, utf8)
-const lines = data.trim().split('\n')
-console.log("🚀 ~ lines:", lines)
+const lines = data.split('\n')
 
-const levels = []
+const reports = []
 
 lines.forEach((line) => {
-  levels.push(line.split(/\s+/))
+  reports.push(line.split(/\s+/).map(Number))
 })
 
+const monotonicReports = []
+
+reports.forEach((report) => {
+  if (isAlwaysIncreasing(report) || isAlwaysDecreasing(report)) {
+    monotonicReports.push(report)
+  }
+})
+
+const safeReports = []
+const unsafeReports = []
+
+for (const monotonicReport of monotonicReports) {
+  let isSafe = true
+
+  for (let i = 1; i < monotonicReport.length; i++) {
+    const difference = Math.abs(monotonicReport[i] - monotonicReport[i - 1])
+    if (difference < 1 || difference > 3) {
+      isSafe = false
+      break
+    }
+  }
+
+  if (isSafe) {
+    safeReports.push(monotonicReport)
+  } else {
+    unsafeReports.push(monotonicReport)
+  }
+}
+
+console.log('Solution to AoC 2024 Day 1, Part 1:\nThe total number of safe reports =', safeReports.length)
