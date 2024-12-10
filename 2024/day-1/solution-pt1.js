@@ -23,4 +23,4 @@ for(let i = 0; i < leftLocationIds.length; i++) {
 }
 
 const sum = difference.reduce((acc, cur) => acc + cur, 0)
-console.log('Solution to AoC 2024 Day 1, Part 1 =', sum)
+console.log('Solution to AoC 2024 Day 1, Part 1:\nThe total distance between the list of left and right location IDs =', sum)

@@ -33,4 +33,4 @@ leftLocationIds.forEach((id, index) => {
 
 const totalSimilarityScore = similarityScores.reduce((acc, cur) => acc + cur, 0) 
 
-console.log('Solution to AoC 2024 Day 1, Part 2 =', totalSimilarityScore)
+console.log('Solution to AoC 2024 Day 1, Part 2:\nThe similarity score between the lists of left and right location IDs =', totalSimilarityScore)
