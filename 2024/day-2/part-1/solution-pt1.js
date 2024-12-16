@@ -1,8 +1,8 @@
 import fs from 'fs'
-import { input, utf8 } from '../../constants/index.js'
+import { utf8 } from '../../../constants/index.js'
 import { isAlwaysIncreasing, isAlwaysDecreasing } from './utils/index.js'
 
-const data = fs.readFileSync(input, utf8)
+const data = fs.readFileSync('../input.txt', utf8)
 const lines = data.split('\n')
 
 const reports = []
@@ -20,7 +20,6 @@ reports.forEach((report) => {
 })
 
 const safeReports = []
-const unsafeReports = []
 
 for (const monotonicReport of monotonicReports) {
   let isSafe = true
@@ -35,8 +34,6 @@ for (const monotonicReport of monotonicReports) {
 
   if (isSafe) {
     safeReports.push(monotonicReport)
-  } else {
-    unsafeReports.push(monotonicReport)
   }
 }
 
