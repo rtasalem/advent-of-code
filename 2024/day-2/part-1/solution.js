@@ -1,6 +1,6 @@
 import fs from 'fs'
 import { utf8 } from '../../../constants/index.js'
-import { isAlwaysIncreasing, isAlwaysDecreasing } from './utils/index.js'
+import { isAlwaysIncreasing, isAlwaysDecreasing } from '../utils/index.js'
 
 const data = fs.readFileSync('../input.txt', utf8)
 const lines = data.split('\n')
