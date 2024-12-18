@@ -1,4 +1,4 @@
-import { monolithicDampener } from './monolithic-dampener.js'
+import { monolithicDampener } from './monotonic-dampener.js'
 
 export {
   monolithicDampener
